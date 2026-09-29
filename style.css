@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.top-bar {
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  font-size: 16px;
+}
+.nav{
+  padding: 9px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px;
+  background: white;
+  font-size: 24px;
+}
+.icon{
+  font-size: 30px;
+  display: none;
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+.navitem{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navitem li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  height: 50vh;
+  background: url('https://htmldemo.net/edubuzz/edubuzz/img/banner/2.jpg') no-repeat center/cover;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  max-width: 1400px;
+  margin: 0px auto;
+  align-items: center;
+  padding: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 500px;
+  
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  font-size: 25px ;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+  }
+  .hero {
+    padding: 15px;
+    height: auto;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 900px) {
+  header{
+    flex-direction: row;
+    padding: 10px 20px;
+  }
+  .navitem{
+    display: none;
+  }
+  .icon{
+    display: block;
+  }
+ .navitem{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navitem li {
+    margin: 10px 0;
+  }
+}
+
+.hero-container{
+  background-color: white;
+  box-shadow: 0 0 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+.class1{
+  padding: 20px 50px;
+  gap: 20px;
+}
+.head{
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: orange;
+
+  .pera{
+    color: rgb(34, 34, 161);
+  }
+}
+p{
+  font-size: 20px;
+  padding: 5px;
+}
+.btn{
+  padding: 15px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 30px;
+  border: none;
+
+}
+.btn:hover{
+  background-color: orange;
+  box-shadow: 0px 0px 3px;
+}
+
+@media (max-width: 1200px) {
+  .hero-container{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.course-section{
+  background-color: aquamarine;
+  padding: 50px 70px;
+
+  h1{
+    padding-bottom: 10px;
+  }
+
+  max-width: 1400px;
+  margin: 0px auto;
+}
+.course-div{
+ display: flex;
+ justify-content: center;
+ gap: 45px;
+ flex-wrap: wrap;
+ margin-top: 35px;
+
+}
+.course-card{
+  width: 350px;
+  background-color:white;
+  box-shadow: 0px 0px 4px;
+  overflow: hidden;
+}
+.course-card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.course-card h3{
+  padding: 15px;
+  font-size: 30px;
+}
+
+.course-card p{
+  padding: 0 15px 20px;
+}
+
+.course-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+.course-info span{
+  padding: 5px 0px;
+  gap: 5px;
+  color: gray;
+  font-size: 10px;
+}
+.course-info i{
+  margin-right: 5px;
+}
+.stars{
+  font-size: 10px;
+  color: goldenrod;
+}
+.btn-box{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-box bton{
+  background-color: royalblue;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn-box bton:hover{
+  background-color: orange;
+}
+@media (max-width: 1000px) {
+  .course-card{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+.banner{
+  background: url(https://htmldemo.net/edubuzz/edubuzz/img/banner/2.jpg) no-repeat center/cover;
+  background-position: center;
+  justify-content: center;
+  background-size: cover;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+  margin: 0px auto;
+  padding: 100px 50px;
+}
+.card{
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.538);
+  border: 1px solid black;
+  padding: 30px 40px;
+  text-align: center;
+  color: white;
+}
+.card h2{
+  color: orange;
+  font-size: 30px;
+}
+.card p{
+  margin-top: 10px;
+}
+.card:hover{
+  border: 2px solid orange;
+  box-shadow: 0px 0px 2px;
+}
+@media (max-width:1200px) {
+  .banner{
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+  }
+}
+@media (max-width:600px) {
+  .banner{
+    grid-template-columns: repeat(1,1fr);
+  
+  }
+
+  .card{
+    margin: auto;
+  }
+}
+
+.Latest-section{
+  background-color: white;
+  padding: 30px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  h1{
+    padding-bottom: 10px;
+  }
+
+}
+.Learn-section{
+ display: flex;
+ justify-content: center;
+ gap: 50px;
+ flex-wrap: wrap;
+ margin-top: 30px;
+}
+.Learn-card{
+  width: 350px;
+  background-color:white;
+  box-shadow: 0px 0px 4px;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 20px;
+
+  img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+
+  h3{
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+  p{
+    padding: 15px 25px ;
+    font-size: 16px;
+  }
+
+  .btn-card{
+    padding-left: 20px;
+    display: block;
+  }
+
+  button{
+    padding: 10px 15px;
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+}
+.Learn-card:hover{
+  box-shadow: 0px 0px 8px;
+}
+
+
+
+
+.team-member-section{
+  padding: 70px;
+  text-align: center;
+  height: 550;
+
+  >h1{
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+}
+
+.team-member{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.member-card{
+  flex: 1;
+  padding: 20px 20px 0px 20px;
+  box-shadow: 0px 0px 15px gray;
+  height: 290px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+  h1{
+    font-size: 20px;
+  }
+}
+
+.member-image{
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.social-icon{
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  justify-content: center;
+  height: 40px;
+
+
+  span{
+    background-color: orange;
+    padding: 4px 8px 10px 8px;
+    display: inline-block;
+    border-radius: 50% 50% 0% 0%;
+    color: white;
+  }
+}
+
+.member-card:hover{
+  height: 337px;
+}
+
+.member-card:hover.member-image > img{
+  transform: scale(1.1);
+}
